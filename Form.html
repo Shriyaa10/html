@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <style>
+        body{
+            background-color: rgb(214, 212, 212);
+        }
+        form {
+            border: 1px solid black;
+            margin-top: 5%;
+            margin: 0 20% 0 20%;
+            padding: 3%;
+            background-color: rgba(245, 231, 210, 0.315);
+        }
+        .name{
+            height: 15px;
+            width: 50px;
+        }
+        #sub{
+            height: 30px;
+            width: 60px;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            margin-left: 20%;
+        }
+        #sub:hover{
+            background-color: greenyellow;
+            color: black;
+        }
+        .dob{
+            margin-left: 71px;
+        }
+        .cl{
+            margin-left: 80px;
+        }
+        .address{
+            height: 50px;
+            width: 400px;
+        }
+        .pass{
+            margin-left: 40px;
+        }
+        .sub{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get">
+        <h2>Student Details</h2>
+        First Name: <input type="text" name="fname" class="name"/>
+        Middle Name: <input type="text" name="mname" class="name"/>
+        Last Name: <input type="text" name="lname" class="name"/><br><br>
+        Email: <input type="email" name="email"/>
+        <label class="pass">Password: </label><input type="password" name="password"/><br><br>
+        Gender: <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Female" /> Female
+        <label  class="dob">Date of Birth: </label> <input type="date" name="dob" /><br><br>
+       
+        Address: <input type="textarea" name="Address" class="address"/><br><br>
+        Branch: <select name="Branch">
+            <option value="CSE">CSE</option>
+            <option value="DS">DS</option>
+            <option value="AIML">AIML</option>
+            <option value="ENTC">ENTC</option>
+            <option value="Civil">Civil</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Electrical">Electrical</option>
+        </select>
+        <LABEL class="cl">Class:</LABEL> <select name="Class">
+            <option value="FY">FY</option>
+            <option value="SY">SY</option>
+            <option value="TY">TY</option>
+            <option value="LY">LY</option>
+        </select>
+        
+        <br><br>
+        Subjects: <input type="checkbox" name="Subjects" value="HTML" class="sub"/>HTML
+        <input type="checkbox" name="Subjects" value="Compiler Design" class="sub"/>Compiler Design
+        <input type="checkbox" name="Subjects" value="AIML" class="sub"/>AIML
+        <input type="checkbox" name="Subjects" value="Automata Thoery" class="sub"/>Automata Theory
+
+        <br><br><br>
+        <input type="submit" value="Submit" name="Submit" id="sub"/>
+    </form>
+</body>
+
+</html>
